@@ -22,7 +22,7 @@ class ContentContainer{
                         <p >Ten facts about me </p> 
                     </div>
                     <div class='content-subtitle'>
-                        <li> I have an awesome and supportive <a href='#'>fiancee</a>. </br> </li>
+                        <li> I have an awesome and supportive fiancee</a>. </br> </li>
                         <li> I am Taiwanese but I live in Tempe, AZ for now. </br> </li>
                         <li> I am currently a software engineering master's student at Arizona State University. </br> </li>
                         <li> I have 5 years of working experience as a back-end software engineer. </br> </li>
