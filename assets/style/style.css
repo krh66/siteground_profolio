@@ -1,0 +1,752 @@
+html,
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: proxima-nova;
+    color: #000;
+    box-sizing: border-box;
+}
+
+h3{
+    color: #e5e5e5;
+}
+
+a h3:hover{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #0654ba;
+}
+
+.wrapper{
+    min-width: 1050px;
+    min-height: 100%;
+    background-color: #f0f0f0;
+}
+
+.signInContainer{
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column{
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 2px;
+    padding: 20px 35px;
+    overflow: auto;
+}
+
+.column form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"]{
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+
+.column form input[type="submit"]{
+    background-color: #4285f4;
+    color: #fff;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.column .header{
+    padding: 20px 0;
+}
+
+.column h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: #000;
+}
+
+.column .header .span{
+    font-size: 14px;
+}
+
+.column .header img{
+    width: 100px;
+}
+
+.signInMessage{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.errorMessage{
+    color: #f00;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.previewIamge{
+    width: 100%;
+}
+
+.previewContainer{
+    position: relative;
+    display: flex;
+}
+
+.previewContainer.small{
+    width: 230px;
+    height: 129px;
+    margin-right: 4px;
+    display: inline-flex;
+}
+
+.previewContainer.small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.previewOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.previewOverlay .mainDetails h3{
+    color: #fff;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.previewOverlay .mainDetails h4{
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.previewOverlay .mainDetails{
+    position: relative;
+    top: 35%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content2-block-border1 {
+    border: 1px solid;
+    border-color: #e1a87a;
+    min-width: 150px;
+    padding: 0 38px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.content2-block-border {
+    color: #fff;
+    background-color: transparent;
+    width: 350px; 
+    height: 80px;
+    text-align: center;
+}
+
+button i{
+    color: inherit;
+}
+
+.content2-block-border a{
+    color: #e1a87a;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: block;
+    text-align: center;
+    border: .01em solid #e1a87a;
+    text-align: center;
+    line-height: 5;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .165em;
+    font-size: 16px;
+}
+
+
+.content2-block-border:hover{
+    background-color: #e1a87a;
+    color: #151515;
+}
+.content2-block-border a:hover{
+    background-color: #e1a87a;
+    color: inherit;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.entites,
+.videos{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.errorBanner{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.season{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.episodeContainer{
+    display: inline-flex;
+    justify-content:center;
+    margin-right: 4px;
+
+}
+
+.episodeContainer .contents{
+    display: flex;
+    flex-direction: column;
+    width:230px;
+    position: relative;
+}
+
+.episodeContainer img{
+    width:230px;
+    height:129px;
+    object-fit: cover;
+}   
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span{
+    color: #fff;
+    width: 100%;
+    white-space: normal;
+
+}
+
+.episodeContainer .videoInfo {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.previewCategories.noScroll .category .entites{
+    white-space: normal;
+}
+
+.watchContainer video{
+    width: 100%;
+}
+
+.videoControls{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoControls h1{
+    color: #fff;
+}
+
+.videoControls button{
+    font-size: 50px;
+    padding: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.upNext{
+    height: 100%;
+    justify-content: center;
+}
+
+.upNextContainer button{
+    padding: 0;
+}
+
+.upNextContainer h2,
+.upNextContainer h3{
+    color: #fff;
+}
+
+.watchNav {
+    z-index: 2;
+}
+
+.seen {
+    color: #2ecc71;
+    font-size: 26px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.topBar-normal {
+    background-color: #fff;
+    height: 50px;
+}
+
+.topBar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    height: 50px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition: background-color 200ms linear;
+    background-color: transparent;
+}
+
+.topBar.scrolled {
+    background-color: #fff;
+    transition: background-color 200ms linear;
+}
+
+.topBar.scrolled .navLinks a {
+    color: dimgray;
+}
+
+.logoContainer {
+    height: 25px;
+}
+
+.logoContainer img{
+    height: 100%;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a {
+    color: dimgray;
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 10px 0;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11.5px;
+    letter-spacing: .165em;
+    text-transform: uppercase;
+}
+
+.rightItems {
+    text-align: right;
+    flex: 1;
+}
+
+.rightItems i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+
+.previewCategories img {
+    width: 50%;
+    padding: 200px 100px;
+}
+
+.previewCategories p {
+    color: #121212;
+    font-size: 40px;
+    padding: 200px 50px;
+    font-family: proxima-nova;
+    font-weight: 450;
+    font-style: normal;
+    letter-spacing: .165em;
+    text-transform: uppercase;
+}
+
+.previewCategories h3 {
+    color: #121212;
+    font-size: 20px;
+    font-family: proxima-nova;
+    font-weight: 30;
+    font-style: normal;
+    letter-spacing: .165em;
+}
+
+.textboxContainer {
+    padding: 100px 50px;
+
+}
+
+.searchInput {
+    height: 50px;
+    width: 600px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+
+.settingsContainer {
+    padding-top: 60px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsContainer h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.settingsContainer .formSection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"] {
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+.settingsContainer form input[type="submit"] {
+    background-color: #dc1928;
+    width: 100px;
+    height: 40px;
+}
+
+
+.formSection h3 {
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.content1 {
+    height: 1200px;
+    background-color: #fff;
+    color: #121212;
+}
+
+.content1-block1 {
+    height: 25%;
+}
+.content1-block1,
+.content1-block2,
+.content1-block3,
+.content1-block4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content1-block1-img,
+.content1-block2-img,
+.content1-block3-img,
+.content1-block4-img {
+    width: 40%;
+    padding-left: 200px;
+    border-bottom: 1.5px solid #121212;
+}
+
+.content1-block2 {
+    height: 25%;
+}
+
+.content1-block3 {
+    height: 25%;
+}
+
+.content1-block4 {
+    height: 25%;
+}
+
+
+.content2 {
+    height: 600px;
+    background-color: #121212;
+    color: #fff;
+    background-image:url( "assets/images/preweddingPhoto.jpg" );
+}
+
+.content1-title {
+    font-size: 120px;
+    height: 20%;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.content1-block {
+    height: 80%;
+}
+
+.content2-title {
+    background-color: #121212;
+    font-size: 120px;
+    text-align: center;
+    padding: 80px;
+}
+
+.content2-title h1,
+.content1-title h1 {
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    font-size: 40px;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    font-style: normal;
+    letter-spacing: .165em;
+    text-transform: uppercase;
+}
+
+.content2-body-block {
+    background-color: #121212;
+    height: 35%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2-body-block-narrow,
+.content2-body-block-narrow1  {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+h2 {
+    font-size: 16px;
+    color: #e1a87a;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    text-decoration-style: solid;
+    font-style: normal;
+    letter-spacing: .165em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 2em;
+    letter-spacing: .1em;
+}
+
+.content1 {
+    padding-bottom: 120px;
+}
+
+
+.content2-body-block  .content2-block {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.content1-block-border {
+    width: 90%;
+    height: 90%;
+    padding: 5px 30px;
+    border: .01em;
+    border-color: #e1a87a;
+    border-style: solid;
+}
+
+
+
+.content2-body-block  .content2-block2 {
+    width: 33%;
+}
+
+.content2-body-block  .content2-block3 {
+    width: 34%;
+}
+
+.block-content {
+    display: flex;
+}
+
+.content {
+    display: flex;
+}
+
+.content-block {
+    width: 50%;
+}
+
+.content-block2 {
+    width: 50%;
+    text-align: left;
+}
+
+.image-card {
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+.image-card img {
+    padding: 100px 100px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.image-card-content{
+    padding-top: 40%;
+}
+.image-card-content .content-title p {
+    color: #121212;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    font-size: 33px;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    text-decoration-style: solid;
+    font-family: proxima-nova;
+    font-style: normal;
+    letter-spacing: .165em;
+    text-transform: uppercase;
+}
+
+
+.content-subtitle li,
+.content-subtitle li a {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 2em;
+    letter-spacing: .1em;
+}
+
+
+
+.xxx {
+margin-left: 25px;
+padding-top: 250px;
+}
+
+.content2-title h1 {
+    color: #fff;
+}
+
+.content2-block1-body li {
+    font-size: 12px;
+    color: #fff;
+}
+
+.content3 {
+    display: grid;
+    text-align: center;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.resume-block {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-text h4{
+    height: 60%;
+    color: #fff;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 2em;
+    letter-spacing: .1em;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.social-item {
+    padding-bottom: 20px;
+}
+
+.social-item i {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
